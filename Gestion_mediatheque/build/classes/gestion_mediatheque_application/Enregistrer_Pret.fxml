@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_mediatheque_application.Enregistrer_PretController">
+   <children>
+      <ImageView fx:id="image" fitHeight="447.0" fitWidth="600.0" layoutY="-1.0" opacity="0.24" pickOnBounds="true">
+         <image>
+            <Image url="@articlemediatheque.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="Lnum" layoutX="56.0" layoutY="45.0" text="Votre numéro de pret est le suivant : ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Ladherent" layoutX="56.0" layoutY="107.0" text="Choisir un adherent">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Loeuvre" layoutX="55.0" layoutY="183.0" text="Choisir une oeuvre">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Ldate" layoutX="55.0" layoutY="261.0" text="Date de pret ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="retour" layoutX="55.0" layoutY="366.0" mnemonicParsing="false" onAction="#RetourAction" style="-fx-background-color: #C60800;" text="retour" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="enregistrer_quitter" layoutX="420.0" layoutY="366.0" mnemonicParsing="false" onAction="#EnregistrerQuitterAction" style="-fx-background-color: #22780F;" text="Enregistrer et quitter" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="Lnumberpret" layoutX="439.0" layoutY="47.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Combo_adherent" layoutX="420.0" layoutY="105.0" prefHeight="25.0" prefWidth="169.0" />
+      <ComboBox fx:id="Combo_oeuvre" layoutX="420.0" layoutY="181.0" prefHeight="25.0" prefWidth="169.0" />
+      <DatePicker fx:id="date_pret" layoutX="412.0" layoutY="259.0" prefHeight="25.0" prefWidth="179.0" />
+      <Label fx:id="Lerror" layoutX="165.0" layoutY="318.0" text="Veuillez choisir une valeur pour chaque champ" textFill="#fc0000" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lerror1" layoutX="179.0" layoutY="320.0" text="Veuillez choisir une date superieur à celle d'aujourd'hui" textFill="#d81818" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_mediatheque_application.OeuvrePretCaracteristiqueController">
+   <children>
+      <ImageView fx:id="image" fitHeight="400.0" fitWidth="600.0" opacity="0.58" pickOnBounds="true">
+         <image>
+            <Image url="@biblio%20photo.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableview_oeuvre" layoutY="14.0" prefHeight="200.0" prefWidth="281.0">
+        <columns>
+          <TableColumn fx:id="tabletitre" prefWidth="75.0" text="titre" />
+          <TableColumn fx:id="tableauteur" prefWidth="72.6666488647461" text="auteur" />
+            <TableColumn fx:id="tableexemplaire" prefWidth="147.3333282470703" text="nombre_exemplaire" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableview_pret" layoutX="281.0" layoutY="14.0" prefHeight="200.0" prefWidth="319.0">
+        <columns>
+          <TableColumn fx:id="tablenom_adherent" prefWidth="89.3333740234375" text="nom_adherent" />
+          <TableColumn fx:id="table_id_pret" prefWidth="61.33331298828125" text="id_pret" />
+            <TableColumn fx:id="tabledatederemiseattendue" prefWidth="166.6666259765625" text="date_de_remise_attendue" />
+        </columns>
+      </TableView>
+      <Button fx:id="retour" layoutX="255.0" layoutY="318.0" mnemonicParsing="false" onAction="#RetourAction" style="-fx-background-color: #C60800;" text="retour" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="Ltest" layoutX="46.0" layoutY="309.0" text="Label" visible="false" />
+   </children>
+</AnchorPane>

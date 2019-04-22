@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="335.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="gestion_mediatheque_application.OeuvrePretController">
+   <children>
+      <ImageView fx:id="image" fitHeight="338.0" fitWidth="600.0" opacity="0.86" pickOnBounds="true">
+         <image>
+            <Image url="@biblio%20photo.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableview" prefHeight="127.0" prefWidth="590.0">
+        <columns>
+          <TableColumn fx:id="tablename" prefWidth="106.0000330209732" text="nom_adherent" />
+          <TableColumn fx:id="table_oeuvre" prefWidth="155.33338165283203" text="oeuvre" />
+            <TableColumn fx:id="table_auteur" prefWidth="154.66665649414062" text="auteur" />
+            <TableColumn fx:id="table_exemplaire" prefWidth="172.66659545898438" text="exemplaire" />
+        </columns>
+      </TableView>
+      <Button fx:id="retour" layoutX="166.0" layoutY="219.0" mnemonicParsing="false" onAction="#RetourAction" style="-fx-background-color: #C60800;" text="retour" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="accueil" layoutX="421.0" layoutY="219.0" mnemonicParsing="false" onAction="#AccueilAction" style="-fx-background-color: #22780F;" text="accueil" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="Ltest" layoutX="36.0" layoutY="269.0" text="Label" visible="false" />
+   </children>
+</AnchorPane>

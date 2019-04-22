@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_mediatheque_application.Nouveau_AdherentController">
+   <children>
+      <ImageView fx:id="image" fitHeight="400.0" fitWidth="600.0" opacity="0.31" pickOnBounds="true">
+         <image>
+            <Image url="@_images_111116_awmountassir-mediatheque-khouribga-3.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="Lnom" layoutX="107.0" layoutY="60.0" text="nom : ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lprenom" layoutX="95.0" layoutY="146.0" text="prenom : ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Ladresse" layoutX="96.0" layoutY="227.0" text="adresse : ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtnom" layoutX="318.0" layoutY="61.0" />
+      <TextField fx:id="txtprenom" layoutX="318.0" layoutY="147.0" />
+      <TextField fx:id="txtadresse" layoutX="318.0" layoutY="228.0" />
+      <Button fx:id="sauvegarder_quitter" layoutX="381.0" layoutY="341.0" mnemonicParsing="false" onAction="#Sauvegarder_QuitterAction" style="-fx-background-color: #22780F;" text="sauvegarder et quitter" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="retour" layoutX="70.0" layoutY="334.0" mnemonicParsing="false" onAction="#RetourAction" style="-fx-background-color: #C60800;" text="retour" textFill="#f7f7f7">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ProgressIndicator layoutX="536.0" layoutY="277.0" visible="false" />
+      <Label fx:id="Lerror" layoutX="192.0" layoutY="281.0" text="Attention tous les champs sont obligatoires" textFill="RED" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lexception" layoutX="145.0" layoutY="294.0" text="Impossible d'ajouter cet adherent" textFill="#f30a0a" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
